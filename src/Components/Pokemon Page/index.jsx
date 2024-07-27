@@ -21,7 +21,6 @@ const PokemonApp = () => {
   useEffect(() => {
     fetchPokemons();
   }, [])
-  const newArr = [...new Set(pokemonData?.map((a)=>a.name))]
   console.log(pokemonData);
   return (
     <div className='w-full h-screen flex flex-col items-center  bg-slate-50 py-4'>
