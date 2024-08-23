@@ -28,7 +28,7 @@ const PokemonApp = () => {
          <input placeholder='Search' onChange={(e)=> setFilterData((e.target.value).toLowerCase())} className='w-2/3 border border-gray-600 py-1 px-3'/>
       </div>
       <div className='w-full flex items-center py-16 justify-center'>
-      <div className="flex flex-wrap overflow-auto items-center justify-evenly  gap-16 drop-shadow-2xl w-11/12 ">
+      <div className="flex flex-wrap overflow-auto items-center justify-evenly gap-4 sm:gap-16 drop-shadow-2xl w-11/12 ">
         {pokemonData?.filter((element)=> (
           fiterData 
           ?
